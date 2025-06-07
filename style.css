@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme {
+
+    --color-primary:rgb(240,128,34);
+    --color-secend:#3F4A8D;
+    --color-therid:#935A2B;
+}
+.footerbg{
+    background-color: rgb(232, 205, 177);
+}
