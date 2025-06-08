@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/tailwindcss.css">
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
 </head>
 
 <body>
     <header class="bg-white shadow-md fixed top-0 right-0 z-50 w-full">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-4  flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center space-x-3 lg:h-16 h-12 md:h-14 md:w-14 w-12 lg:w-16">
                 <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 111.69 75.16" viewBox="0 0 111.69 75.16"
@@ -60,11 +61,11 @@
                     target="_blank" class="bg-[#074151] text-white px-4 py-2 rounded-lg ">
                     Our Profile
                 </a>
-                <a href="/" class=" text-secend   font-medium">Home</a>
-                <a href="/services" class="text-primary  hover:text-secend   font-medium">Services</a>
-                <a href="/projects" class="text-primary hover:text-secend   font-medium">Projects</a>
-                <a href="/about-us" class="text-primary hover:text-secend   font-medium">About Us</a>
-                <a href="/contact" class="text-primary hover:text-secend   font-medium">Contact Us</a>
+                <a href="./home.html" class=" text-secend   font-medium">Home</a>
+                <a href="./services.html" class="text-primary  hover:text-secend   font-medium">Services</a>
+                <a href="./projects.html" class="text-primary hover:text-secend   font-medium">Projects</a>
+                <a href="./Aboutus.html" class="text-primary hover:text-secend   font-medium">About Us</a>
+                <a href="./Contact.html" class="text-primary hover:text-secend   font-medium">Contact Us</a>
             </nav>
         </div>
 
@@ -72,19 +73,21 @@
         <div class="lg:hidden overflow-hidden max-h-0 transition-all z-50 fixed w-full bg-white duration-300 ease-in-out"
             id="mobile-menu">
             <nav class="flex flex-col items-center space-y-4 py-4">
-                <a href="/" class="text-secend   font-medium">Home</a>
-                <a href="/services" class="text-primary hover:text-secend   font-medium">Services</a>
-                <a href="/projects" class="text-primary hover:text-secend   font-medium">Projects</a>
-                <a href="/about-us" class="text-primary hover:text-secend   font-medium">About Us</a>
-                <a href="/contact" class="text-primary hover:text-secend   font-medium">Contact Us</a>
+                <a href="./home.html" class="text-secend   font-medium">Home</a>
+                <a href="./services.html" class="text-primary hover:text-secend   font-medium">Services</a>
+                <a href="./projects.html" class="text-primary hover:text-secend   font-medium">Projects</a>
+                <a href="./Aboutus.html" class="text-primary hover:text-secend   font-medium">About Us</a>
+                <a href="./Contact.html" class="text-primary hover:text-secend   font-medium">Contact Us</a>
             </nav>
         </div>
     </header>
+    <div class="h-12 bg-black w-full"></div>
 
 
-    <div class="h-20 bg-black w-full"></div>
-    <main>
-        <div class=" p-8" style="background-image: url('./images/first.avif'); ">
+
+    <main class="md:mb-20 mb-10">
+        <!-- section 1 -->
+        <section class=" p-8 bg-center bg-cover" style="background-image: url('./images/first.avif'); ">
 
             <!-- Header Section -->
             <div class="flex justify-center items-center ">
@@ -220,12 +223,486 @@
                     <span>You</span>
                 </h1>
             </div>
+        </section>
+        <!-- section 1 - 5  -->
+        <section class=" sectionbackground pt-10">
+            <!-- section 2 -->
+            <div class=" md:h-screen">
+                <div class="flex flex-col md:flex-row h-full max-w-7xl w-full mx-auto">
+
+                    <div
+                        class="w-full md:w-[45%]  backgroundgradian md:p-10 p-3 flex flex-col justify-center text-left">
+                        <div class="max-w-xl">
+                            <hr class="w-10 my-5">
+
+                            <h2 class="text-3xl font-bold text-blue-900 mb-4">OUR VISION</h2>
+                            <p class="text-gray-700 mb-8 line-clamp-4">
+                                To become one of the leading companies in the fields of constructions in Saudi Arabia,
+                                and Alkhalij region through providing integrated and comprehensive services and
+                                solutions
+                                that would meet the requirements and objectives of our clients.
+                            </p>
+                            <hr class="w-10 my-5">
+                            <h2 class="text-3xl font-bold text-blue-900 mb-4">OUR MISSION</h2>
+                            <p class="text-gray-700 line-clamp-4">
+                                We look forward to setting the modern and cutting-edge standards in Saudi Arabia,
+                                through
+                                an elite group of competent and highly skilled Arabian entrepreneurs, united by the
+                                mission,
+                                driven by inspiration, motivated by competition and passion for presenting a truly
+                                unique
+                                experience to our clients, to attain a long-lasting partnership.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:max-w-[55%] h-[60vh] md:h-full">
+                        <img src="./images/builder.avif" alt="Construction Building"
+                            class="object-cover w-full h-full" />
+                    </div>
+                </div>
+            </div>
+            <!-- section 3 -->
+            <div class=" py-5 relative bg-cover">
+                <div class="opacity-10 bg-cover w-full h-full top-0 left-0 absolute z-0 "
+                    style="background-image: url('./images/section3.avif');"></div>
+
+                <div class="section3 w-full h-full top-0 left-0 absolute z-0 "></div>
+                <div class="max-w-4xl  mx-auto text-center text-white relative z-10">
+                    <h2 class="md:text-3xl text-2xl font-bold mb-4 lg:mb-5 text-secend">OUR VALUES</h2>
+                    <div
+                        class="flex flex-col text-left lg:gap-8 md:gap-4 gap-2 lg:mt-14 md:mt-10 mb-5 mt-5 md:px-5 lg:px-0 px-3">
+                        <div class="text-xl flex items-end gap-1 text-black ">
+                            <p class="text-secend md:text-4xl sm:text-3xl text-2xl font-semibold ">
+                                <span
+                                    class="text-primary  md:text-5xl sm:text-4xl text-3xl -tracking-wider ">T</span><span>rust</span></span>&nbsp;</span>
+                            </p>
+                            <p class="font-medium md:text-xl sm:text-lg text-base line-clamp-1">our first concern to
+                                building with clients.</p>
+                        </div>
+                        <div class="text-xl flex items-end gap-1 text-black ">
+                            <p class="text-secend md:text-4xl sm:text-3xl text-2xl font-semibold ">
+                                <span
+                                    class="text-primary  md:text-5xl sm:text-4xl text-3xl -tracking-wide ">C</span><span>rust</span></span>&nbsp;</span>
+                            </p>
+                            <p class="font-medium md:text-xl sm:text-lg text-base line-clamp-1">our way dealing with
+                                Clients.
+                            </p>
+                        </div>
+                        <div class="text-xl flex items-end gap-1 text-black ">
+                            <p class="text-secend md:text-4xl sm:text-3xl text-2xl font-semibold ">
+                                <span
+                                    class="text-primary  md:text-5xl sm:text-4xl text-3xl -tracking-wide ">G</span><span>rand</span></span>&nbsp;</span>
+                            </p>
+                            <p class="font-medium md:text-xl sm:text-lg text-base line-clamp-1">always our performers in
+                                projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section 4 -->
+            <div class="">
+                <div class="flex flex-col md:flex-row   md:h-[35vh] w-full mx-auto">
+                    <div class="w-full md:max-w-1/2 md:h-full h-[20vh]">
+                        <img src="./images/section4.avif" alt="Construction Building"
+                            class="object-cover w-full h-full" />
+                    </div>
+                    <div
+                        class="w-full md:w-1/2 bg-white md:pb-0 pb-5 md:px-10 px-3 flex flex-col justify-center text-left">
+                        <div class="max-w-xl">
+                            <h1 class="text-secend font-bold text-2xl md:mt-0 my-4 mb-4">Excellency</h1>
+                            <p class="text-gray-700 sm:text-base text-sm line-clamp-6">We seek perfection in providing
+                                all our
+                                services and
+                                solutions, and
+                                strengthening our
+                                perfection is being the first
+                                pioneering company in the field of construction, along with concentrating on developing
+                                special and exceptional
+                                relations with our clients, not forgetting the diligence of learning and applying
+                                everything new that would enhance the
+                                services provided to our clients.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- section 5 -->
+            <div class="bg-cover bg-center" style="background-image: url('./images/section5.jpg');">
+                <div class="py-14 bg-white/70 ">
+                    <h1 class="text-center text-secend md:text-4xl text-2xl font-medium ">Our Services
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <!-- section 6 - 8 -->
+        <section class="bg-gray-100 lg:py-20 md:py-16 py-10">
+            <!-- section 6 -->
+            <div class=" bg-cover bg-center max-w-7xl  mx-auto  "
+                style="background-image: url('./images/section\ 6.avif');">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 h-full max-w-3xl mx-auto">
+                    <div class="bg-white p-6  shadow-md flex flex-col items-center">
+                        <div class="text-center mt-4 text-secend">
+                            <div class="flex justify-center items-center">
+                                <svg preserveAspectRatio="xMidYMid meet" data-bbox="30.968 30.431 138.168 139.139"
+                                    viewBox="30.968 30.431 138.168 139.139" height="80" width="80"
+                                    xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
+                                    aria-hidden="true" aria-label="">
+                                    <defs>
+                                        <style>
+                                            #comp-kq9g539d svg [data-color="1"] {
+                                                fill: #FD5521;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g>
+                                        <path
+                                            d="M122.684 155.939H116.8v-5.889h5.888zm11.777-5.889h-5.888v5.889h5.888zm-11.777-11.776H116.8v5.888h5.888zm11.777 0h-5.888v5.888h5.888zM122.684 126.5H116.8v5.888h5.888zm11.777 0h-5.888v5.888h5.888zm-11.777-11.78H116.8v5.889h5.888zm11.777 0h-5.888v5.889h5.888zm-11.777-11.776H116.8v5.888h5.888zm11.777 0h-5.888v5.888h5.888zm-11.777-11.777H116.8v5.888h5.888zm11.777 0h-5.888v5.888h5.888zM122.684 79.39H116.8v5.888h5.888zm11.777 0h-5.888v5.888h5.888zm-11.777-11.777H116.8V73.5h5.888zm11.777 0h-5.888V73.5h5.888zm-11.777-11.777H116.8v5.889h5.888zm11.777 0h-5.888v5.889h5.888zm-23.553 0h-5.889v5.889h5.889zm11.776-11.777H116.8v5.889h5.888zm11.777 0h-5.888v5.889h5.888zm11.777 105.991h-5.888v5.889h5.888zm0-11.776h-5.888v5.888h5.888zm0-11.777h-5.888v5.888h5.888zm0-11.777h-5.888v5.889h5.888zm0-11.776h-5.888v5.888h5.888zm0-11.777h-5.888v5.888h5.888zm0-11.777h-5.888v5.888h5.888zm0-11.777h-5.888V73.5h5.888zm0-11.777h-5.888v5.889h5.888zm0-11.777h-5.888v5.889h5.888zm-35.33 0h-5.889v5.889h5.889zM93.243 61.725h5.888v-5.889h-5.888zm0-11.777h5.888v-5.889h-5.888zm75.893 117.769a1.851 1.851 0 0 1-1.852 1.852H32.716a1.853 1.853 0 0 1 0-3.7h10.071V72.41h-1.659a1.852 1.852 0 0 1 0-3.7h41.14V34.136h-2.8a1.853 1.853 0 1 1 0-3.705h80.082a1.853 1.853 0 1 1 0 3.705h-2.34v131.728h10.072a1.852 1.852 0 0 1 1.854 1.853zM85.973 68.706h24.934a1.852 1.852 0 1 1 0 3.7h-1.091v93.454h43.691V34.136H85.973zm20.138 97.158V72.41h-59.62v93.454zM95.94 82.69a1.851 1.851 0 0 0-1.852 1.853v70.2a1.852 1.852 0 1 0 3.7 0v-70.2a1.851 1.851 0 0 0-1.848-1.853zm-13.093 0A1.851 1.851 0 0 0 81 84.543v70.2a1.852 1.852 0 1 0 3.7 0v-70.2a1.851 1.851 0 0 0-1.853-1.853zm-13.093 0a1.851 1.851 0 0 0-1.854 1.853v70.2a1.852 1.852 0 1 0 3.7 0v-70.2a1.851 1.851 0 0 0-1.846-1.853zm-13.091 0a1.851 1.851 0 0 0-1.852 1.853v70.2a1.852 1.852 0 1 0 3.7 0v-70.2a1.851 1.851 0 0 0-1.848-1.853z"
+                                            fill="#fd5521" data-color="1"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold  underline mt-4">Construction</h3>
+                            <h4 class=" font-bold text-5xl mt-10">
+                                30+
+                            </h4>
+                            <p class="text-base mt-2 tracking-wide mb-10 ">Projects Completed</p>
+                        </div>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div class="bg-white p-6  shadow-md flex flex-col items-center">
+                        <div class="text-center mt-4 text-secend">
+                            <div class="flex justify-center items-center">
+                                <svg preserveAspectRatio="xMidYMid meet" data-bbox="33.155 35.068 133.69 129.862"
+                                    viewBox="33.155 35.068 133.69 129.862" height="80" width="80"
+                                    xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
+                                    aria-hidden="true" aria-label="">
+                                    <defs>
+                                        <style>
+                                            #comp-kq9g539r1 svg [data-color="1"] {
+                                                fill: #FD5521;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g>
+                                        <path
+                                            d="M166.114 84.3l-18.761-14.246a1.832 1.832 0 0 0 .039-.193V39.745h1.852a1.853 1.853 0 1 0 0-3.7h-22.228a1.853 1.853 0 0 0 0 3.7h1.853v16.271l-27.087-20.571a1.856 1.856 0 0 0-2.229-.011L33.9 84.291a1.852 1.852 0 0 0 1.108 3.337h7.572v73.6h-5.557a1.852 1.852 0 1 0 0 3.7h125.958a1.852 1.852 0 1 0 0-3.7h-5.557v-73.6h7.569a1.852 1.852 0 0 0 1.121-3.326zm-33.541-44.555h11.114V67.27l-11.114-8.441zm21.147 121.483H46.284v-73.6H153.72zM40.6 83.924l60.048-44.688 58.842 44.688zm67.621 57.842h29.637a1.853 1.853 0 0 0 0-3.7h-1.172v-36.831a1.851 1.851 0 0 0-1.853-1.852h-23.587a1.851 1.851 0 0 0-1.852 1.852v36.826h-1.172a1.853 1.853 0 1 0 0 3.7zm24.76-38.679v9.548H113.1v-9.548zM113.1 116.34h19.884v21.721H113.1zm-50.955 25.426h29.637a1.853 1.853 0 1 0 0-3.7H90.61v-36.831a1.851 1.851 0 0 0-1.852-1.852H65.169a1.851 1.851 0 0 0-1.852 1.852v36.826h-1.172a1.853 1.853 0 0 0 0 3.7zm24.76-38.679v9.548H67.022v-9.548zM67.022 116.34h19.883v21.721H67.022zm24.189-51.585A8.79 8.79 0 1 0 100 55.963a8.8 8.8 0 0 0-8.789 8.792zm13.874 0A5.085 5.085 0 1 1 100 59.668a5.089 5.089 0 0 1 5.085 5.087z"
+                                            fill="#fd5521" data-color="1"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold  underline mt-4">Steel Hangers projects</h3>
+                            <h4 class=" font-bold text-5xl mt-10">
+                                20+
+                            </h4>
+                            <p class="text-base mt-2 tracking-wide mb-10 ">Projects Completed</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Third Column -->
+                    <div class="bg-white p-6  shadow-md flex flex-col items-center">
+                        <div class="text-center mt-4 text-secend">
+                            <div class="flex justify-center items-center">
+                                <svg preserveAspectRatio="xMidYMid meet" data-bbox="35.168 38.873 129.664 122.254"
+                                    viewBox="35.168 38.873 129.664 122.254" height="80" width="80"
+                                    xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
+                                    aria-hidden="true" aria-label="">
+                                    <defs>
+                                        <style>
+                                            #comp-kq9g539w svg [data-color="1"] {
+                                                fill: #FD5521;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g>
+                                        <path
+                                            d="M153.718 148.161V51.839a1.852 1.852 0 0 0-1.853-1.852H61.1v-9.262a1.851 1.851 0 0 0-1.852-1.852H44.43a9.272 9.272 0 0 0-9.262 9.262v92.616a9.272 9.272 0 0 0 9.262 9.262h107.435a1.852 1.852 0 0 0 1.853-1.852zM38.873 48.135a5.563 5.563 0 0 1 5.557-5.557H57.4v88.912H44.43a9.214 9.214 0 0 0-5.557 1.856zm111.14 98.173H44.43a5.557 5.557 0 1 1 0-11.114h14.819a1.851 1.851 0 0 0 1.852-1.852v-79.65h88.912zm14.819-83.355v96.322a1.852 1.852 0 0 1-1.853 1.852H55.544a1.853 1.853 0 0 1 0-3.705h105.583V62.953a1.853 1.853 0 0 1 3.7 0zm-90.765 64.832h59.275a1.851 1.851 0 0 0 1.852-1.852V85.181a1.851 1.851 0 0 0-1.852-1.852h-12.966V70.363a1.852 1.852 0 0 0-1.853-1.853H74.067a1.852 1.852 0 0 0-1.852 1.853v55.57a1.852 1.852 0 0 0 1.852 1.852zm1.853-55.57h18.523v1.852a1.853 1.853 0 1 0 3.7 0v-1.852h18.523v12.966a1.851 1.851 0 0 0 1.852 1.853h12.972v14.818h-16.671a1.853 1.853 0 1 0 0 3.7h16.671v18.528H98.148v-1.852a1.853 1.853 0 0 0-3.7 0v1.852H75.92zm18.523 20.376v-7.41a1.853 1.853 0 0 1 3.7 0v7.41a1.853 1.853 0 0 1-3.7 0zm0 18.523v-7.409a1.853 1.853 0 1 1 3.7 0v7.409a1.853 1.853 0 0 1-3.7 0z"
+                                            fill="#fd5521" data-color="1"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold  underline mt-4">HVAC Systems</h3>
+                            <h4 class=" font-bold text-5xl mt-10">
+                                50+
+                            </h4>
+                            <p class="text-base mt-2 tracking-wide mb-10 ">Projects Completed</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Swiper Container -->
+            <!-- section 7 -->
+            <!-- <div class="relative">
+
+                <div class="swiper-container my-4 h-[50vh] max-w-7xl mx-auto overflow-hidden relative">
+                    <div class="swiper-wrapper   mx-auto ">
+
+                    </div>
+                </div>
+                <div id="left-btn"
+                    class="swiper-pagination-left absolute top-1/2 left-4 transform -translate-y-1/2 bg-black h-10 w-10 z-10 flex items-center justify-center text-white">
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+                </div>
+
+                <div id="right-btn"
+                    class="swiper-pagination-right absolute top-1/2 right-4 transform -translate-y-1/2 bg-black h-10 w-10 z-10 flex items-center justify-center text-white">
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+                </div>
+            </div> -->
+            <!-- section 8 -->
+            <div class="container mx-auto lg:pt-20 md:pt-16 pt-10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <!-- Year of Establishment -->
+                    <div class="flex justify-center items-center">
+
+                        <div class="flex gap-2">
+                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="34.5 28 130.999 144"
+                                viewBox="34.5 28 130.999 144" height="80" width="80" xmlns="http://www.w3.org/2000/svg"
+                                data-type="color" role="presentation" aria-hidden="true">
+                                <defs>
+                                    <style>
+                                        #comp-lejywalq svg [data-color="1"] {
+                                            fill: #3F4A8D;
+                                        }
+                                    </style>
+                                </defs>
+                                <g>
+                                    <path
+                                        d="M129.773 85.01h-5.955v-3.666c0-6.686-15.453-11.379-23.818-11.379-8.366 0-23.818 4.693-23.818 11.379v3.666h-5.955v-3.666c0-12.378 21.011-17.378 29.773-17.378 8.763 0 29.773 5 29.773 17.378v3.666z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M93.489 172H80.293a2.98 2.98 0 0 1-2.836-2.087l-8.853-27.909H51.749c-9.51 0-17.249-7.796-17.249-17.378V88.597c0-6.94 5.604-12.586 12.492-12.586h.449c6.585 0 12.935 2.783 17.423 7.635l9.589 10.363h16.615c.834 0 1.63.353 2.194.973.564.618.845 1.449.772 2.285-.436 5.099-4.108 14.741-14.875 14.741H63.643a2.97 2.97 0 0 1-2.128-.901l-.22-.227v7.127h11.863c6.303 0 11.944 4.045 14.034 10.065.036.104.067.211.092.318l9.106 39.939a3.011 3.011 0 0 1-.573 2.541 2.965 2.965 0 0 1-2.328 1.13zm-11.021-5.999h7.282l-8.23-36.094c-1.295-3.536-4.636-5.901-8.362-5.901h-14.84c-1.644 0-2.977-1.343-2.977-3v-16.255l-8.382-8.627 4.257-4.198 13.68 14.081H79.16c4.947 0 7.176-3.315 8.17-5.999H73.158a2.966 2.966 0 0 1-2.178-.955L60.509 87.736a17.864 17.864 0 0 0-13.068-5.725h-.449c-3.605 0-6.537 2.954-6.537 6.587v36.028c0 6.275 5.066 11.379 11.294 11.379h19.03a2.98 2.98 0 0 1 2.836 2.087l8.853 27.909z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M55.341 73.011c-8.07 0-14.886-6.868-14.886-14.998v-3c0-8.139 6.817-15.014 14.886-15.014s14.886 6.875 14.886 15.014v3c0 8.269-6.678 14.998-14.886 14.998zm0-27.013c-4.841 0-8.932 4.129-8.932 9.015v3c0 4.877 4.091 8.999 8.932 8.999s8.932-4.122 8.932-8.999v-3c0-4.886-4.091-9.015-8.932-9.015z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M119.149 172h-13.194a2.966 2.966 0 0 1-2.329-1.131 3.022 3.022 0 0 1-.573-2.541l9.106-39.939c.023-.107.055-.214.09-.318 2.093-6.02 7.734-10.065 14.037-10.065h12.418v-7.685l-.797.804a2.963 2.963 0 0 1-2.108.882H120.84c-10.766 0-14.439-9.642-14.875-14.741a3.005 3.005 0 0 1 .77-2.285 2.968 2.968 0 0 1 2.195-.973h16.061l9.586-10.363c4.489-4.852 10.839-7.635 17.422-7.635h.451c7.074 0 13.049 5.764 13.049 12.586v36.028c0 9.419-8.153 17.378-17.805 17.378H130.84l-8.856 27.911a2.979 2.979 0 0 1-2.835 2.087zm-9.455-5.999h7.28l8.856-27.911a2.98 2.98 0 0 1 2.835-2.086h19.03c6.423 0 11.851-5.211 11.851-11.379V88.597c0-3.509-3.315-6.587-7.094-6.587h-.451a17.857 17.857 0 0 0-13.066 5.727l-10.47 11.316a2.968 2.968 0 0 1-2.178.955h-13.616c.991 2.682 3.222 5.999 8.17 5.999h13.723l13.962-14.1 4.216 4.236-8.083 8.164v16.699c0 1.657-1.332 3-2.977 3h-15.395c-3.727 0-7.068 2.365-8.365 5.901l-8.228 36.094z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M144.659 73.011c-8.068 0-14.886-6.868-14.886-14.998v-3c0-8.139 6.818-15.014 14.886-15.014s14.886 6.875 14.886 15.014v3c0 8.13-6.818 14.998-14.886 14.998zm0-27.013c-4.841 0-8.932 4.129-8.932 9.015v3c0 4.877 4.091 8.999 8.932 8.999s8.932-4.122 8.932-8.999v-3c0-4.886-4.091-9.015-8.932-9.015z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path fill="#3940B2" d="M141.682 106.007v5.999H58.318v-5.999h83.364z"
+                                        data-color="1">
+                                    </path>
+                                    <path
+                                        d="M100 61.012c-8.07 0-14.886-6.868-14.886-14.998v-3C85.114 34.875 91.93 28 100 28c8.068 0 14.886 6.875 14.886 15.014v3c0 8.131-6.818 14.998-14.886 14.998zm0-27.013c-4.841 0-8.932 4.129-8.932 9.015v3c0 4.877 4.091 8.999 8.932 8.999s8.932-4.122 8.932-8.999v-3c0-4.886-4.091-9.015-8.932-9.015z"
+                                        fill="#3940B2" data-color="1"></path>
+                                </g>
+                            </svg>
+                            <div class="flex flex-col items-center">
+                                <span class="text-4xl text-primary font-black">1995</span>
+                                <span class="text-lg text-secend tracking-wide font-light">Year of Establishment</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+
+                        <div class="flex gap-2">
+                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="55.001 28 89.999 144"
+                                viewBox="55.001 28 89.999 144" height="80" width="80" xmlns="http://www.w3.org/2000/svg"
+                                data-type="color" role="presentation" aria-hidden="true">
+                                <defs>
+                                    <style>
+                                        #comp-lejywamv1 svg [data-color="1"] {
+                                            fill: #3F4A8D;
+                                        }
+                                    </style>
+                                </defs>
+                                <g>
+                                    <path
+                                        d="M100 67H76a3 3 0 0 1-2.895-2.21l-9-33A3 3 0 0 1 67 28h42a3.001 3.001 0 0 1 2.895 3.789l-9 33A3.001 3.001 0 0 1 100 67zm-21.709-6h19.418l7.364-27H70.927l7.364 27z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M88 172a2.99 2.99 0 0 1-2.121-.879l-30-30a2.995 2.995 0 0 1-.795-2.821l18-75A2.998 2.998 0 0 1 76 61h24a3 3 0 0 1 2.917 2.3l18 75a2.995 2.995 0 0 1-.795 2.821l-30 30A2.995 2.995 0 0 1 88 172zm-26.691-33.933L88 164.758l26.691-26.691L97.634 67H78.366l-17.057 71.067z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M139.003 139c-.242 0-.486-.028-.731-.089l-12-3 1.456-5.821 9.089 2.272 1.978-7.91-32.391-55.948 5.191-3.006 33 57c.391.674.504 1.475.315 2.231l-3 12a3.002 3.002 0 0 1-2.907 2.271z"
+                                        fill="#3940B2" data-color="1"></path>
+                                </g>
+                            </svg>
+                            <div class="flex flex-col items-center">
+                                <span class="text-4xl text-primary font-black">30+</span>
+                                <span class="text-lg text-secend tracking-wide font-light">Employees</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="26 33.811 147.999 132.378"
+                                viewBox="26 33.811 147.999 132.378" height="80" width="80"
+                                xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
+                                aria-hidden="true">
+                                <defs>
+                                    <style>
+                                        #comp-lejywamj svg [data-color="1"] {
+                                            fill: #3F4A8D;
+                                        }
+                                    </style>
+                                </defs>
+                                <g>
+                                    <path
+                                        d="M167.833 166.189H32.167a3.08 3.08 0 0 1-3.083-3.079v-58.493c0-1.7 1.381-3.079 3.083-3.079a3.08 3.08 0 0 1 3.083 3.079v55.414h129.5v-55.414a3.08 3.08 0 0 1 3.083-3.079 3.08 3.08 0 0 1 3.083 3.079v58.493a3.08 3.08 0 0 1-3.083 3.079z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M143.167 120.011H137a3.08 3.08 0 1 1 0-6.158h6.167c14.062 0 24.667-9.264 24.667-21.55V58.44H32.167v33.864c0 12.286 10.59 21.55 24.632 21.55H63c1.703 0 3.083 1.378 3.083 3.079s-1.381 3.079-3.083 3.079h-6.201C39.241 120.011 26 108.099 26 92.304V55.361c0-1.7 1.381-3.079 3.083-3.079h141.833a3.08 3.08 0 0 1 3.083 3.079v36.943c.001 15.795-13.254 27.707-30.832 27.707z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M121.583 120.011H78.417c-1.703 0-3.083-1.378-3.083-3.079s1.381-3.079 3.083-3.079h43.167a3.08 3.08 0 1 1-.001 6.158z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M121.583 49.204h-6.167v-3.079c0-3.396-2.767-6.157-6.167-6.157H87.667c-3.401 0-6.167 2.761-6.167 6.157v3.079h-6.167v-3.079c0-6.79 5.533-12.314 12.333-12.314h21.583c6.802 0 12.333 5.524 12.333 12.314v3.079z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M78.417 129.246H63a3.08 3.08 0 0 1-3.083-3.079v-18.471c0-1.7 1.381-3.079 3.083-3.079h15.417a3.08 3.08 0 0 1 3.083 3.079v18.471a3.081 3.081 0 0 1-3.083 3.079zm-12.334-6.157h9.25v-12.314h-9.25v12.314z"
+                                        fill="#3940B2" data-color="1"></path>
+                                    <path
+                                        d="M137 129.246h-15.417a3.08 3.08 0 0 1-3.083-3.079v-18.471a3.08 3.08 0 0 1 3.083-3.079H137a3.08 3.08 0 0 1 3.083 3.079v18.471a3.08 3.08 0 0 1-3.083 3.079zm-12.333-6.157h9.25v-12.314h-9.25v12.314z"
+                                        fill="#3940B2" data-color="1"></path>
+                                </g>
+                            </svg>
+                            <div class="flex flex-col items-center">
+                                <span class="text-4xl text-primary font-black">100+</span>
+                                <span class="text-lg text-secend tracking-wide font-light">Projects Completed</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="25.502 49.499 148.998 101.005"
+                                viewBox="25.502 49.499 148.998 101.005" height="80" width="80"
+                                xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
+                                aria-hidden="true">
+                                <defs>
+
+                                </defs>
+                                <g>
+                                    <path
+                                        d="M150.812 98.779a2.692 2.692 0 0 0-3.758.626l-7.272 10.193-13.538-9.249a9.477 9.477 0 0 0-.258-.169c-1.316-.975-16.082-11.899-27.309-19.416.356-1.162-.013-2.489-1.048-3.157a2.695 2.695 0 0 0-3.909 1.111l-9.112 16.9c-.46.851-1.319 1.161-1.79 1.269-.931.212-1.988.05-2.901-.444l-.294-.16c-.916-.496-1.631-1.294-1.962-2.189-.168-.454-.381-1.344.078-2.195l8.819-16.345a.041.041 0 0 1 .023-.02l10.686-4.002a5.38 5.38 0 0 1 2.158-.335l18.195.92.006.001 12.122 2.163a2.7 2.7 0 0 0 3.156-2.417c.132-1.43-.988-2.68-2.4-2.932l-12.098-2.159-.345-.039-20.034-1.012a2.77 2.77 0 0 0-1.079.167l-13.15 4.924c-.51.191-.956.529-1.27.975-.177.251-.34.513-.488.788l-.264.489c-4.956-.321-12.9-1.405-12.986-1.417a2.689 2.689 0 0 0-3.035 2.308c-.202 1.478-4.617 2.25 2.303 3.041.307.035 6.038.821 10.916 1.261l-5.975 11.075c-1.073 1.988-1.215 4.407-.391 6.638.791 2.139 2.372 3.938 4.451 5.063l.293.159a9.716 9.716 0 0 0 4.623 1.19c.687 0 1.373-.076 2.046-.231 2.313-.531 4.255-1.975 5.328-3.963l6.807-12.616c11.522 7.743 26.555 18.898 26.716 19.018.07.051.141.1.216.144l15.837 10.814a2.937 2.937 0 0 1 1.232 1.897 2.943 2.943 0 0 1-.455 2.216l-.164.241a2.954 2.954 0 0 1-4.106.778l-15.707-10.73a2.686 2.686 0 0 0-3.743.71 2.7 2.7 0 0 0 .708 3.75l12.233 8.356c.141.156.296.303.477.427a2.937 2.937 0 0 1 1.232 1.897 2.943 2.943 0 0 1-.455 2.216l-.164.241c-.918 1.35-2.759 1.697-4.163.741l-13.66-8.828a2.689 2.689 0 0 0-3.724.805 2.702 2.702 0 0 0 .804 3.731l11.184 7.227c.153.18.322.35.527.489a2.937 2.937 0 0 1 1.232 1.897 2.943 2.943 0 0 1-.455 2.216l-.164.241a2.958 2.958 0 0 1-4.117.771l-11.008-7.436a2.69 2.69 0 0 0-3.74.729 2.703 2.703 0 0 0 .727 3.747l7.434 5.022c.165.208.352.402.583.56a2.937 2.937 0 0 1 1.232 1.897 2.943 2.943 0 0 1-.455 2.216l-.164.241c-.919 1.348-2.76 1.698-4.094.787l-9.857-6.808 2.053-2.921c2.324-3.307 1.53-7.892-1.771-10.222l-.624-.44a7.273 7.273 0 0 0-2.454-1.109c.622-3.053-.552-6.33-3.253-8.236l-.688-.486a7.988 7.988 0 0 0-5.154-1.449c-.01-.066-.013-.133-.025-.199a8.297 8.297 0 0 0-3.406-5.404l-.24-.17c-2.9-2.046-6.662-1.967-9.449-.098-.473-.68-1.047-1.305-1.761-1.809l-.624-.44a7.25 7.25 0 0 0-5.466-1.224 7.264 7.264 0 0 0-4.735 2.998l-1.251 1.78-5.385-7.97c-6.868-10.67-2.509-1.557-3.741-.722a2.702 2.702 0 0 0-.721 3.748l6.529 9.664-3.307 4.704a7.296 7.296 0 0 0-1.222 5.477 7.285 7.285 0 0 0 2.993 4.744l.625.441a7.235 7.235 0 0 0 3.437 1.277c.053 2.57 1.272 5.083 3.526 6.673l.236.167a8.254 8.254 0 0 0 4.778 1.521c.481 0 .967-.042 1.452-.126a8.49 8.49 0 0 0 1.292-.34 8.026 8.026 0 0 0 2.803 3.529l.688.486a7.985 7.985 0 0 0 4.619 1.47c.235 0 .471-.041.707-.061.389 1.703 1.356 3.28 2.89 4.363l.626.442a7.27 7.27 0 0 0 4.204 1.335 7.315 7.315 0 0 0 5.997-3.109l2.72-3.869 9.913 6.847a8.292 8.292 0 0 0 4.687 1.449 8.336 8.336 0 0 0 6.905-3.647l.164-.241a8.315 8.315 0 0 0 1.409-3.934c.342.043.686.075 1.028.075a8.336 8.336 0 0 0 6.905-3.647l.164-.241a8.329 8.329 0 0 0 1.446-4.637 8.333 8.333 0 0 0 6.81-3.641l.164-.241a8.294 8.294 0 0 0 1.402-3.837c.344.044.69.078 1.04.078.524 0 1.051-.049 1.577-.149a8.282 8.282 0 0 0 5.343-3.497l.164-.241a8.313 8.313 0 0 0 1.298-6.261 8.358 8.358 0 0 0-1.49-3.414l7.477-10.48a2.71 2.71 0 0 0-.627-3.77zm-90.018 24.84a1.912 1.912 0 0 1-1.193.732 1.914 1.914 0 0 1-1.443-.32l-.625-.441a1.922 1.922 0 0 1-.786-1.253 1.92 1.92 0 0 1 .319-1.445l7.876-11.204a1.92 1.92 0 0 1 1.25-.788 1.904 1.904 0 0 1 1.444.32l.624.44a1.935 1.935 0 0 1 .545 2.56l-8.011 11.399zm8.681 7.814a2.929 2.929 0 0 1-1.911 1.206 2.946 2.946 0 0 1-2.207-.491l-.236-.167a2.967 2.967 0 0 1-.715-4.125l.748-1.065c.032-.043.073-.076.103-.12l7.876-11.204c.03-.042.046-.09.074-.132l2.145-3.051a2.93 2.93 0 0 1 1.912-1.206c.174-.03.347-.045.52-.045.603 0 1.187.183 1.682.533l.241.17a2.967 2.967 0 0 1 .714 4.125l-10.946 15.572zm10.628 5.136a2.66 2.66 0 0 1-1.734 1.093 2.652 2.652 0 0 1-1.999-.443l-.689-.486a2.692 2.692 0 0 1-.648-3.741l9.527-13.554a2.678 2.678 0 0 1 3.732-.65l.689.486a2.692 2.692 0 0 1 .648 3.741v-.001l-9.526 13.555zm15.679-4.809l-7.876 11.204a1.933 1.933 0 0 1-2.693.469l-.625-.442a1.943 1.943 0 0 1-.468-2.699l7.876-11.204a1.923 1.923 0 0 1 1.251-.788 1.904 1.904 0 0 1 1.443.32l.624.44a1.944 1.944 0 0 1 .468 2.7z"
+                                        fill="#3F4A8D" data-color="1"></path>
+                                    <path
+                                        d="M174.3 96.518l-31.78-46.522a1.138 1.138 0 0 0-1.585-.297l-16.671 11.433a1.144 1.144 0 0 0-.297 1.588l31.781 46.522a1.138 1.138 0 0 0 1.585.297l16.671-11.433a1.144 1.144 0 0 0 .296-1.588z"
+                                        fill="#3F4A8D" data-color="2"></path>
+                                    <path
+                                        d="M72.839 61.978l-17.496-10.12a1.137 1.137 0 0 0-1.557.418l-28.133 48.823a1.147 1.147 0 0 0 .417 1.56l17.496 10.12a1.135 1.135 0 0 0 1.558-.417l28.133-48.823a1.147 1.147 0 0 0-.418-1.561z"
+                                        fill="#3F4A8D" data-color="2"></path>
+                                    <path fill="#0E4828"
+                                        d="M44.723 97.769a4.15 4.15 0 0 1-4.146 4.154 4.15 4.15 0 0 1-4.146-4.154 4.15 4.15 0 0 1 4.146-4.154 4.15 4.15 0 0 1 4.146 4.154z"
+                                        data-color="1"></path>
+                                    <path fill="#0E4828"
+                                        d="M163.157 94.395a4.15 4.15 0 0 1-4.146 4.154 4.15 4.15 0 0 1-4.146-4.154 4.15 4.15 0 0 1 4.146-4.154 4.15 4.15 0 0 1 4.146 4.154z"
+                                        data-color="1"></path>
+                                </g>
+                            </svg>
+                            <div class="flex flex-col items-center">
+                                <span class="text-4xl text-primary font-black">100+</span>
+                                <span class="text-lg text-secend tracking-wide font-light">Clients</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <div>
+            <!-- section 9 -->
+            <div class="container mx-auto   md:pt-10 pt-5">
+                <h1 class="text-secend text-4xl text-center mb-5">Our Partnerships</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <!-- Year of Establishment -->
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <img src="./images/section 9-1.avif" alt="">
+                        </div>
+
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <img src="./images/image.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <img src="./images/section 9-3.avif" alt="">
+
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <img src="./images/section 9-4.avif" alt="">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center ">
+                    <a href="#"
+                        class="text-primary hover:text-secend duration-500 tracking-wide  font-bold uppercase text-2xl text-center mb-5">More
+                        details</a>
+                </div>
+            </div>
+            <hr class=" max-w-7xl mx-auto  my-10">
+            <!-- section 10  -->
+            <div class="container mx-auto   md:pt-10 pt-5">
+                <h1 class="text-secend lg:text-4xl md:text-2xl text-xl text-center mb-3">Our Clients</h1>
+                <p class="lg:text-5xl md:text-4xl text-2xl max-w-4xl mx-auto text-center font-bold text-primary mb-5">We
+                    believe each client is a
+                    long term
+                    partnership
+                </p>
+                <div class="grid grid-cols-1   sm:grid-cols-5 gap-6 text-center">
+                    <!-- Year of Establishment -->
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <img src="./images/section 10-1.avif" alt="">
+                        </div>
+
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <img src="./images/section 10-2.avif" alt="">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <img src="./images/section 10-3.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <img src="./images/section 10-4.avif" alt="">
+
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="flex gap-2">
+                            <img src="./images/section 10-5.avif" alt="">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center mt-3">
+                    <h4 class="text-2xl font-medium text-secend">Add More..</h4>
+                    <a href="#"
+                        class="text-primary hover:text-secend duration-500 tracking-wide  font-bold uppercase md:text-2xl text-xl text-center mb-5">see
+                        the list</a>
+                </div>
+            </div>
         </div>
-
-
-
     </main>
-    <footer class="bg-beige py-8 relative">
+
+    <footer class="bg-beige py-8  relative">
         <div class="w-full h-full absolute top-0 left-0 footerbg -z-10"
             style="background-image: url('./images/bg.png');">
         </div>
@@ -274,7 +751,7 @@
 
                 <!-- Column 2: Quick Links -->
                 <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Head Office
+                    <h3 class="text-xl font-semibold text-[rgb(84,28,11)]">Head Office
                     </h3>
                     <ul class="mt-4 space-y-2">
                         <li class="text-gray-800 flex items-center space-x-2">
@@ -285,16 +762,16 @@
                                     <g>
                                         <path
                                             d="M99.999 179.5l-4.053-4.877C93.746 171.972 42 109.349 42 78.612 
-                                                                    42 46.569 68.018 20.5 99.999 20.5 131.985 20.5 158 46.569 158 78.612 
-                                                                    c0 30.738-51.743 93.361-53.948 96.011l-4.053 4.877zm0-148.434c-26.166 
-                                                                    0-47.455 21.328-47.455 47.545 0 20.481 31.206 63.869 47.455 84.264 
-                                                                    16.252-20.394 47.458-63.783 47.458-84.264-.001-26.217-21.289-47.545-47.458-47.545z"
+                                                                            42 46.569 68.018 20.5 99.999 20.5 131.985 20.5 158 46.569 158 78.612 
+                                                                            c0 30.738-51.743 93.361-53.948 96.011l-4.053 4.877zm0-148.434c-26.166 
+                                                                            0-47.455 21.328-47.455 47.545 0 20.481 31.206 63.869 47.455 84.264 
+                                                                            16.252-20.394 47.458-63.783 47.458-84.264-.001-26.217-21.289-47.545-47.458-47.545z"
                                             fill="#4854C7" data-color="1"></path>
                                         <path
                                             d="M99.999 102.075c-12.911 0-23.419-10.525-23.419-23.464s10.507-23.466 
-                                                                    23.419-23.466c12.914 0 23.421 10.527 23.421 23.466 0 12.939-10.507 23.464-23.421 
-                                                                    23.464zm0-36.364c-7.097 0-12.872 5.786-12.872 12.9 0 7.112 5.775 12.899 
-                                                                    12.872 12.899 7.1 0 12.878-5.787 12.878-12.899-.001-7.114-5.779-12.9-12.878-12.9z"
+                                                                            23.419-23.466c12.914 0 23.421 10.527 23.421 23.466 0 12.939-10.507 23.464-23.421 
+                                                                            23.464zm0-36.364c-7.097 0-12.872 5.786-12.872 12.9 0 7.112 5.775 12.899 
+                                                                            12.872 12.899 7.1 0 12.878-5.787 12.878-12.899-.001-7.114-5.779-12.9-12.878-12.9z"
                                             fill="#4854C7" data-color="1"></path>
                                     </g>
                                 </svg>
@@ -335,43 +812,71 @@
                                 <g>
                                     <path
                                         d="M143.569 142.285h-45.24c-22.975-1.036-40.617-19.442-40.617-42.269 0-23.325 18.97-42.302 42.288-42.302 31.179 0 42.288 20.641 42.288 39.958 0 12.339-6.33 18.796-12.584 18.796-5.931 0-10.598-4.65-10.846-10.672.025-.164.05-.328.05-.499V86.322a3.356 3.356 0 1 0-6.712 0v1.36c-3.592-3.242-8.331-5.236-13.538-5.236-11.166 0-20.25 9.088-20.25 20.257s9.085 20.257 20.25 20.257c6.593 0 12.443-3.183 16.143-8.078 3.082 5.017 8.54 8.3 14.903 8.3 9.589 0 19.296-8.762 19.296-25.51C149 76.142 136.167 51 100 51c-27.018 0-49 21.989-49 49.016 0 26.467 20.697 47.982 47.118 48.981l.126.003h45.325a3.356 3.356 0 0 0 3.356-3.357 3.356 3.356 0 0 0-3.356-3.358zm-44.911-26.04c-7.465 0-13.538-6.075-13.538-13.543 0-7.467 6.073-13.543 13.538-13.543s13.538 6.075 13.538 13.543c0 7.468-6.074 13.543-13.538 13.543z"
-                                        fill="#0E4828" data-color="1"></path>
+                                        fill="#3F4A8D" data-color="1"></path>
                                 </g>
                             </svg>info@ckom.net
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Quick Links</h3>
+                    <h3 class="text-xl font-semibold text-[rgb(84,28,11)]">Quick Links</h3>
                     <ul class="mt-4 space-y-2">
-                        <li><a href="/home" class="text-gray-600 hover:text-orange-500">Home</a></li>
-                        <li><a href="/services" class="text-gray-600 hover:text-orange-500">Services</a></li>
-                        <li><a href="/projects" class="text-gray-600 hover:text-orange-500">Projects</a></li>
-                        <li><a href="/about-us" class="text-gray-600 hover:text-orange-500">About Us</a></li>
-                        <li><a href="/contact" class="text-gray-600 hover:text-orange-500">Contact Us</a></li>
+                        <li><a href="./home.html" class="text-secend hover:text-secend/80 font-medium">Home</a></li>
+                        <li><a href="./services.html" class="text-secend hover:text-secend/80 font-medium">Services</a>
+                        </li>
+                        <li><a href="./projects.html" class="text-secend hover:text-secend/80 font-medium">Projects</a>
+                        </li>
+                        <li><a href="./Aboutus.html" class="text-secend hover:text-secend/80 font-medium">About Us</a>
+                        </li>
+                        <li><a href="./Contact.html" class="text-secend hover:text-secend/80 font-medium">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Column 3: Additional Links -->
                 <div>
-                    <h3 class="text-xl font-semibold text-gray-800">Go to</h3>
+                    <h3 class="text-xl font-semibold text-[rgb(84,28,11)]">Go to</h3>
                     <ul class="mt-4 space-y-2">
-                        <li><a href="/safety-policy" class="text-gray-600 hover:text-orange-500">Safety Policy</a></li>
-                        <li><a href="/certificates" class="text-gray-600 hover:text-orange-500">Certificates</a></li>
-                        <li><a href="/partners" class="text-gray-600 hover:text-orange-500">Partners</a></li>
-                        <li><a href="/clients" class="text-gray-600 hover:text-orange-500">Clients</a></li>
+                        <li><a href="/safety-policy" class="text-secend hover:text-secend/80 font-medium">Safety
+                                Policy</a></li>
+                        <li><a href="/certificates"
+                                class="text-secend hover:text-secend/80 font-medium">Certificates</a>
+                        </li>
+                        <li><a href="/partners" class="text-secend hover:text-secend/80 font-medium">Partners</a></li>
+                        <li><a href="/clients" class="text-secend hover:text-secend/80 font-medium">Clients</a></li>
                     </ul>
                 </div>
 
             </div>
             <div class="mt-8 text-center text-sm text-gray-500">
                 <p>Designed by <a href="https://www.turkish-tulip.com" target="_blank"
-                        class="text-blue-600 hover:underline">Turkish-tulip.com</a></p>
+                        class="text-blue-600 hover:underline">Mohamed FarjAllah</a></p>
             </div>
         </div>
     </footer>
-
+    <a href="#"
+        class="fixed bottom-5 right-5 rounded-full w-12 h-12 bg-primary flex justify-center items-center fill-white">
+        <svg data-bbox="20 59.5 160 81.001" viewBox="0 0 200 200" height="30" width="30"
+            xmlns="http://www.w3.org/2000/svg" data-type="shape">
+            <g>
+                <path
+                    d="M177.687 128.054L105.35 61.402a7.205 7.205 0 0 0-5.35-1.886 7.198 7.198 0 0 0-5.349 1.886l-72.338 66.652a7.165 7.165 0 0 0-.407 10.138 7.172 7.172 0 0 0 5.283 2.309c1.743 0 3.49-.629 4.872-1.902L100 75.999l67.939 62.598a7.197 7.197 0 0 0 10.155-.406 7.163 7.163 0 0 0-.407-10.137z">
+                </path>
+            </g>
+        </svg>
+    </a>
+    <a href="whatssapLink" class="fixed bottom-5 left-5" style="fill: #48CD48;">
+        <svg preserveAspectRatio="none" data-bbox="2 2 19.998 20" height="48" width="48" viewBox="2 2 19.998 20"
+            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true">
+            <g>
+                <path
+                    d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 0 0 1.333 4.993L2 22l5.232-1.236a9.981 9.981 0 0 0 4.774 1.215h.004c5.505 0 9.985-4.48 9.988-9.985a9.922 9.922 0 0 0-2.922-7.066A9.923 9.923 0 0 0 12.012 2zm-.002 2a7.95 7.95 0 0 1 5.652 2.342 7.93 7.93 0 0 1 2.336 5.65c-.002 4.404-3.584 7.987-7.99 7.987a7.999 7.999 0 0 1-3.817-.971l-.673-.367-.745.175-1.968.465.48-1.785.217-.8-.414-.72a7.98 7.98 0 0 1-1.067-3.992C4.023 7.582 7.607 4 12.01 4zM8.477 7.375a.917.917 0 0 0-.666.313c-.23.248-.875.852-.875 2.08 0 1.228.894 2.415 1.02 2.582.123.166 1.726 2.765 4.263 3.765 2.108.831 2.536.667 2.994.625.458-.04 1.477-.602 1.685-1.185.208-.583.209-1.085.147-1.188-.062-.104-.229-.166-.479-.29-.249-.126-1.476-.728-1.705-.811-.229-.083-.396-.125-.562.125-.166.25-.643.81-.79.976-.145.167-.29.19-.54.065-.25-.126-1.054-.39-2.008-1.24-.742-.662-1.243-1.477-1.389-1.727-.145-.25-.013-.386.112-.51.112-.112.248-.291.373-.437.124-.146.167-.25.25-.416.083-.166.04-.313-.022-.438s-.547-1.357-.77-1.851c-.186-.415-.384-.425-.562-.432-.145-.006-.31-.006-.476-.006z">
+                </path>
+            </g>
+        </svg>
+    </a>
     <script>
+
         function toggleMenu() {
             const mobileMenu = document.getElementById("mobile-menu");
             const navLinks = document.getElementById("nav-links");
@@ -387,12 +892,108 @@
             const mobileMenu = document.getElementById("mobile-menu");
             const hamburgerIcon = document.getElementById("hamburger-icon");
 
-            // If the click is outside the mobile menu and the hamburger icon, close the menu
             if (!mobileMenu.contains(event.target) && !hamburgerIcon.contains(event.target)) {
                 mobileMenu.style.maxHeight = "0px";
             }
         });
+
     </script>
+
+    <!-- 
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1, // Default to 1 slide per view
+            spaceBetween: 10, // Space between slides
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-pagination-right',
+                prevEl: '.swiper-pagination-left',
+            },
+            breakpoints: {
+                // When screen width is larger than 640px, set slidesPerView to 2
+                640: {
+                    slidesPerView: 2, // Show 2 slides per view on screens larger than 640px
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 2, // Show 2 slides per view on larger screens
+                    spaceBetween: 10,
+                }
+            },
+            on: {
+                slideChange: function () {
+                    if (swiper.isBeginning) {
+                        document.getElementById('left-btn').style.display = 'none';
+                    } else {
+                        document.getElementById('left-btn').style.display = 'flex';
+                    }
+
+                    if (swiper.isEnd) {
+                        document.getElementById('right-btn').style.display = 'none';
+                    } else {
+                        document.getElementById('right-btn').style.display = 'flex';
+                    }
+                }
+            }
+        });
+
+        if (swiper.isBeginning) {
+            document.getElementById('left-btn').style.display = 'none';
+        }
+        if (swiper.isEnd) {
+            document.getElementById('right-btn').style.display = 'flex';
+        }
+
+        const images = [
+            "section 7 -1.avif",
+            "section 7 -2.avif",
+            "section 7 -3.avif",
+            "section 7 -4.avif",
+            "section 7 -5.png",
+            "section 7 -6.avif",
+            "section 7 -7.avif",
+            "section 7 -8.avif",
+            "section 7 -9.avif",
+            "section 7 -10.avif",
+            "section 7 -11.avif",
+            "section 7 -12.avif",
+            "section 7 -13.avif"
+        ];
+
+        const renderImages = () => {
+            const swiperWrapper = document.querySelector('.swiper-wrapper');
+            images.forEach((image, index) => {
+                const slide = document.createElement('div');
+                slide.classList.add('swiper-slide');
+
+                // Adjust the number of slides per view
+                if (index % 3 === 0 || index % 3 === 2) {
+                    // For the first and third positions, 1 slide per view
+                    slide.classList.add('slide-1');
+                } else {
+                    // For the second position, 2 slides per view
+                    slide.classList.add('slide-2');
+                }
+
+                const imageContainer = document.createElement('div');
+                imageContainer.classList.add('flex', 'justify-center', 'h-full');
+
+                const imgElement = document.createElement('img');
+                imgElement.src = `./images/${image}`;
+                imgElement.style.width = "100%";
+                imgElement.style.height = "100%";
+                imgElement.classList.add('object-contain');
+
+                imageContainer.appendChild(imgElement);
+                slide.appendChild(imageContainer);
+                swiperWrapper.appendChild(slide);
+            });
+        };
+        renderImages();
+    </script> -->
 
 </body>
 

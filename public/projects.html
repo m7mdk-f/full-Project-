@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./style/tailwindcss.css">
+
+</head>
+
+<body>
+    <header class="bg-white shadow-md fixed top-0 right-0 z-50 w-full">
+        <div class="max-w-7xl mx-auto px-4  flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3 lg:h-16 h-12 md:h-14 md:w-14 w-12 lg:w-16">
+                <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 111.69 75.16" viewBox="0 0 111.69 75.16"
+                    xmlns="http://www.w3.org/2000/svg" data-type="ugc" role="presentation" aria-hidden="true"
+                    aria-label="">
+                    <g>
+                        <path fill="#f08022"
+                            d="M83.65 21.37 81.5 27l-4.81 12.53h-19.5v-8.46h14.25l3.11-8.6-3.72-7.73H57.19V6.43h20.22l6.24 14.94z">
+                        </path>
+                        <path fill="#3f4a8d"
+                            d="M27.49 21.37 29.64 27l4.81 12.53h19.5v-8.46H39.7l-3.11-8.6 3.72-7.73h13.64V6.43H33.73l-6.24 14.94z">
+                        </path>
+                        <path fill="#f08022"
+                            d="m111.69 39.1-2.15 5.64-4.81 12.52h-19.5v-8.45h14.25l3.12-8.59-3.72-7.74H85.23v-8.32h20.23l6.23 14.94z">
+                        </path>
+                        <path fill="#f08022"
+                            d="m77.48 41.98 6.24 14.94-2.15 5.64-4.81 12.52h-19.5v-8.46h14.25l3.11-8.59-3.72-7.74H57.26v-8.31h20.22z">
+                        </path>
+                        <path fill="#3f4a8d"
+                            d="m27.49 57 2.15 5.63 4.81 12.53h19.5V66.7H39.7l-3.11-8.59 3.72-7.74h13.64v-8.31H33.73L27.49 57z">
+                        </path>
+                        <path fill="#3f4a8d"
+                            d="m0 39.19 2.15 5.62 4.81 12.54h19.5v-8.46H12.21l-3.11-8.6 3.72-7.73h13.64v-8.32H6.24L0 39.19z">
+                        </path>
+                        <path stroke="#231f20" stroke-miterlimit="10" fill="none" d="M60.26 3.61h19.6l5.37 13.66h20.84">
+                        </path>
+                        <path stroke="#231f20" stroke-miterlimit="10" fill="none" d="M5.63 17.27h20.83l5.37-13.66h19.6">
+                        </path>
+                        <path fill="none" d="M12.88 0h4.57"></path>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Hamburger Icon for mobile -->
+            <button class="md:hidden text-primary" id="hamburger-icon" onclick="toggleMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Navigation -->
+            <nav class=" items-center space-x-6 hidden md:flex" id="nav-links">
+                <a href="https://www.transchannels.com/_files/ugd/23e411_71ca618b79f74496905531710735d826.pdf"
+                    target="_blank" class="bg-[#074151] text-white px-4 py-2 rounded-lg ">
+                    Our Profile
+                </a>
+                <a href="./home.html" class=" text-primary hover:text-secend   font-medium">Home</a>
+                <a href="./services.html" class="text-primary  hover:text-secend   font-medium">Services</a>
+                <a href="./projects.html" class="text-secend   font-medium">Projects</a>
+                <a href="./Aboutus.html" class="text-primary hover:text-secend   font-medium">About Us</a>
+                <a href="./Contact.html" class="text-primary hover:text-secend   font-medium">Contact Us</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden overflow-hidden max-h-0 transition-all z-50 fixed w-full bg-white duration-300 ease-in-out"
+            id="mobile-menu">
+            <nav class="flex flex-col items-center space-y-4 py-4">
+                <a href="./home.html" class=" text-primary hover:text-secend   font-medium">Home</a>
+                <a href="./services.html" class="text-primary hover:text-secend   font-medium">Services</a>
+                <a href="./projects.html" class="text-secend   font-medium">Projects</a>
+                <a href="./Aboutus.html" class="text-primary hover:text-secend   font-medium">About Us</a>
+                <a href="./Contact.html" class="text-primary hover:text-secend   font-medium">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <div class="h-12 bg-black w-full"></div>
+
+    <main class="my-10">
+
+        <div class="bg-gray-300 h-40 max-w-6xl mx-auto text-center flex items-center justify-center"
+            style="background-image: url('./images/project1.avif');">
+            <h1 class=" text-4xl font-medium  " style="background-color: rgb(186,143,98); color: rgb(9,46,76);">
+                Completed
+                Projects
+            </h1>
+        </div>
+    </main>
+    <footer class="bg-beige py-8  relative">
+        <div class="w-full h-full absolute top-0 left-0 footerbg -z-10"
+            style="background-image: url('./images/bg.png');">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="w-32 h-32">
+                    <div data-testid="svgRoot-comp-le5jk0kf" class="AKxYR5 comp-le5jk0kf">
+                        <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 121.84 94.31" viewBox="0 0 121.84 94.5"
+                            xmlns="http://www.w3.org/2000/svg" data-type="ugc" role="presentation" aria-hidden="true">
+                            <g>
+                                <path fill="#3a4a8e" d="M121.84 81.64v12.67H0V81.64h121.84z"></path>
+                                <text transform="translate(2.17 91.37)" font-size="8.31" fill="#ffffff"
+                                    font-family="Arial-BoldMT,Arial" font-weight="700">OUR CHANNELS SE<tspan y="0"
+                                        x="80.38" letter-spacing="-.02em">R</tspan>
+                                    <tspan y="0" x="86.23">VE</tspan>
+                                    <tspan y="0" x="97.32" letter-spacing="-.02em"> </tspan>
+                                    <tspan y="0" x="99.48">YOU</tspan>
+                                </text>
+                                <path fill="#f08022"
+                                    d="M87.31 21.37 85.16 27l-4.81 12.53H60.84v-8.46H75.1l3.11-8.6-3.72-7.73H60.84V6.43h20.23l6.24 14.94z">
+                                </path>
+                                <path fill="#3f4a8d"
+                                    d="M31.15 21.37 33.3 27l4.81 12.53h19.5v-8.46H43.36l-3.11-8.6 3.72-7.73h13.64V6.43H37.39l-6.24 14.94z">
+                                </path>
+                                <path fill="#f08022"
+                                    d="m115.35 39.1-2.15 5.64-4.81 12.52h-19.5v-8.45h14.25l3.12-8.59-3.72-7.74H88.89v-8.32h20.23l6.23 14.94z">
+                                </path>
+                                <path fill="#f08022"
+                                    d="m81.14 41.98 6.24 14.94-2.15 5.64-4.81 12.52h-19.5v-8.46h14.25l3.11-8.59-3.72-7.74H60.92v-8.31h20.22z">
+                                </path>
+                                <path fill="#3f4a8d"
+                                    d="m31.15 57 2.15 5.63 4.81 12.53h19.5V66.7H43.36l-3.11-8.59 3.72-7.74h13.64v-8.31H37.39L31.15 57z">
+                                </path>
+                                <path fill="#3f4a8d"
+                                    d="m3.66 39.19 2.15 5.62 4.81 12.54h19.5v-8.46H15.87l-3.11-8.6 3.72-7.73h13.64v-8.32H9.89L3.66 39.19z">
+                                </path>
+                                <path stroke="#231f20" stroke-miterlimit="10" fill="none"
+                                    d="M63.92 3.61h19.6l5.37 13.66h20.84"></path>
+                                <path stroke="#231f20" stroke-miterlimit="10" fill="none"
+                                    d="M9.29 17.27h20.83l5.37-13.66h19.6"></path>
+                                <path fill="none" d="M16.54 0h4.57"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold text-[rgb(84,28,11)]">Head Office
+                    </h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="text-gray-800 flex items-center space-x-2">
+                            <div>
+                                <svg preserveAspectRatio="xMidYMid meet" class="mt-0.5" data-bbox="42 20.5 116 159"
+                                    viewBox="42 20.5 116 159" height="20" width="20" xmlns="http://www.w3.org/2000/svg"
+                                    data-type="color" role="presentation" aria-hidden="true">
+                                    <g>
+                                        <path
+                                            d="M99.999 179.5l-4.053-4.877C93.746 171.972 42 109.349 42 78.612 
+                                                                            42 46.569 68.018 20.5 99.999 20.5 131.985 20.5 158 46.569 158 78.612 
+                                                                            c0 30.738-51.743 93.361-53.948 96.011l-4.053 4.877zm0-148.434c-26.166 
+                                                                            0-47.455 21.328-47.455 47.545 0 20.481 31.206 63.869 47.455 84.264 
+                                                                            16.252-20.394 47.458-63.783 47.458-84.264-.001-26.217-21.289-47.545-47.458-47.545z"
+                                            fill="#4854C7" data-color="1"></path>
+                                        <path
+                                            d="M99.999 102.075c-12.911 0-23.419-10.525-23.419-23.464s10.507-23.466 
+                                                                            23.419-23.466c12.914 0 23.421 10.527 23.421 23.466 0 12.939-10.507 23.464-23.421 
+                                                                            23.464zm0-36.364c-7.097 0-12.872 5.786-12.872 12.9 0 7.112 5.775 12.899 
+                                                                            12.872 12.899 7.1 0 12.878-5.787 12.878-12.899-.001-7.114-5.779-12.9-12.878-12.9z"
+                                            fill="#4854C7" data-color="1"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="text-sm leading-7">
+                                King Abdul Aziz Street, Al Badi 'a Building No. 3578 Unit 4 Code 32415 Add 7527
+                            </div>
+                        </li>
+
+                        <li class=" text-secend flex gap-2"><svg preserveAspectRatio="xMidYMid meet"
+                                data-bbox="23.5 23.5 153 152.999" viewBox="23.5 23.5 153 152.999" height="20" width="20"
+                                xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
+                                aria-hidden="true">
+                                <defs>
+                                    <style>
+                                        #comp-le5kfo27 svg [data-color="1"] {
+                                            fill: #3F4A8D;
+                                        }
+                                    </style>
+                                </defs>
+                                <g>
+                                    <path
+                                        d="M57.671 34.013c2.802 0 5.998 1.02 8.46 4.693 6.633 9.883 13.03 19.193 16.572 25.532 1.199 2.151 2.363 8.239-1.553 12.646-3.381 3.798-6.364 4.73-8.165 7.504-1.235 1.912-2.646 6.184-.325 11.096 2.776 5.867 6.162 10.685 13.592 18.234 7.547 7.421 12.364 10.804 18.242 13.581 1.918.905 3.742 1.241 5.363 1.241 2.532 0 4.574-.816 5.735-1.566 2.776-1.799 3.71-4.78 7.511-8.161 2.292-2.033 5.034-2.696 7.443-2.696 2.231 0 4.177.57 5.207 1.148 6.342 3.536 15.657 9.931 25.549 16.558 6.938 4.649 4.408 11.913 3.431 14.196-.982 2.284-6.004 9.841-16.805 15.491-2.972 1.553-6.893 2.476-11.648 2.476-14.968 0-38.155-9.16-65.66-36.651-36.237-36.217-40.635-64.946-34.188-77.26 5.651-10.798 13.213-15.818 15.5-16.795 1.074-.462 3.25-1.267 5.739-1.267zm0-10.513c-4.111 0-7.658 1.158-9.908 2.13-4.45 1.896-13.862 8.598-20.651 21.572-8.484 16.206-4.132 49.387 36.071 89.566 34.585 34.568 60.642 39.731 73.097 39.731 6.301 0 11.86-1.237 16.522-3.674 12.956-6.777 19.673-16.176 21.598-20.661 4.489-10.497 1.645-21.118-7.239-27.075-1.525-1.02-3.036-2.035-4.522-3.034-8.235-5.536-16.013-10.766-21.758-13.972-2.808-1.57-6.577-2.477-10.331-2.479-5.495 0-10.484 1.848-14.427 5.348-2.618 2.327-4.251 4.482-5.442 6.054-.246.325-.552.73-.788 1.02h-.033c-.247 0-.54-.078-.87-.234-4.366-2.062-8.274-4.609-15.298-11.51-6.908-7.024-9.456-10.928-11.519-15.292-.191-.403-.24-.699-.237-.9.29-.235.698-.543 1.025-.79 1.574-1.191 3.729-2.82 6.053-5.43 6.654-7.492 6.45-18.339 2.884-24.745-3.234-5.787-8.505-13.615-14.088-21.903-.968-1.439-1.953-2.899-2.942-4.374C70.824 26.82 64.717 23.5 57.671 23.5z"
+                                        fill="#4854C7" data-color="1"></path>
+                                </g>
+                            </svg>920009029</li>
+                        <li class="text-secend flex gap-2 ">
+                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="51 51 98 98" viewBox="51 51 98 98"
+                                height="20" width="20" xmlns="http://www.w3.org/2000/svg" data-type="color"
+                                role="presentation" aria-hidden="true">
+                                <defs>
+                                    <style>
+                                        #comp-le5kfo27 svg [data-color="1"] {
+                                            fill: #3F4A8D;
+                                        }
+                                    </style>
+                                </defs>
+                                <g>
+                                    <path
+                                        d="M143.569 142.285h-45.24c-22.975-1.036-40.617-19.442-40.617-42.269 0-23.325 18.97-42.302 42.288-42.302 31.179 0 42.288 20.641 42.288 39.958 0 12.339-6.33 18.796-12.584 18.796-5.931 0-10.598-4.65-10.846-10.672.025-.164.05-.328.05-.499V86.322a3.356 3.356 0 1 0-6.712 0v1.36c-3.592-3.242-8.331-5.236-13.538-5.236-11.166 0-20.25 9.088-20.25 20.257s9.085 20.257 20.25 20.257c6.593 0 12.443-3.183 16.143-8.078 3.082 5.017 8.54 8.3 14.903 8.3 9.589 0 19.296-8.762 19.296-25.51C149 76.142 136.167 51 100 51c-27.018 0-49 21.989-49 49.016 0 26.467 20.697 47.982 47.118 48.981l.126.003h45.325a3.356 3.356 0 0 0 3.356-3.357 3.356 3.356 0 0 0-3.356-3.358zm-44.911-26.04c-7.465 0-13.538-6.075-13.538-13.543 0-7.467 6.073-13.543 13.538-13.543s13.538 6.075 13.538 13.543c0 7.468-6.074 13.543-13.538 13.543z"
+                                        fill="#3F4A8D" data-color="1"></path>
+                                </g>
+                            </svg>info@ckom.net
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-[rgb(84,28,11)]">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="./home.html" class="text-secend hover:text-secend/80 font-medium">Home</a></li>
+                        <li><a href="./services.html" class="text-secend hover:text-secend/80 font-medium">Services</a>
+                        </li>
+                        <li><a href="./projects.html" class="text-secend hover:text-secend/80 font-medium">Projects</a>
+                        </li>
+                        <li><a href="./Aboutus.html" class="text-secend hover:text-secend/80 font-medium">About Us</a>
+                        </li>
+                        <li><a href="./Contact.html" class="text-secend hover:text-secend/80 font-medium">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Additional Links -->
+                <div>
+                    <h3 class="text-xl font-semibold text-[rgb(84,28,11)]">Go to</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="/safety-policy" class="text-secend hover:text-secend/80 font-medium">Safety
+                                Policy</a></li>
+                        <li><a href="/certificates"
+                                class="text-secend hover:text-secend/80 font-medium">Certificates</a>
+                        </li>
+                        <li><a href="/partners" class="text-secend hover:text-secend/80 font-medium">Partners</a></li>
+                        <li><a href="/clients" class="text-secend hover:text-secend/80 font-medium">Clients</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="mt-8 text-center text-sm text-gray-500">
+                <p>Designed by <a href="https://www.turkish-tulip.com" target="_blank"
+                        class="text-blue-600 hover:underline">Mohamed FarjAllah</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#"
+        class="fixed bottom-5 right-5 rounded-full w-12 h-12 bg-primary flex justify-center items-center fill-white">
+        <svg data-bbox="20 59.5 160 81.001" viewBox="0 0 200 200" height="30" width="30"
+            xmlns="http://www.w3.org/2000/svg" data-type="shape">
+            <g>
+                <path
+                    d="M177.687 128.054L105.35 61.402a7.205 7.205 0 0 0-5.35-1.886 7.198 7.198 0 0 0-5.349 1.886l-72.338 66.652a7.165 7.165 0 0 0-.407 10.138 7.172 7.172 0 0 0 5.283 2.309c1.743 0 3.49-.629 4.872-1.902L100 75.999l67.939 62.598a7.197 7.197 0 0 0 10.155-.406 7.163 7.163 0 0 0-.407-10.137z">
+                </path>
+            </g>
+        </svg>
+    </a>
+    <a href="whatssapLink" class="fixed bottom-5 left-5" style="fill: #48CD48;">
+        <svg preserveAspectRatio="none" data-bbox="2 2 19.998 20" height="48" width="48" viewBox="2 2 19.998 20"
+            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true">
+            <g>
+                <path
+                    d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 0 0 1.333 4.993L2 22l5.232-1.236a9.981 9.981 0 0 0 4.774 1.215h.004c5.505 0 9.985-4.48 9.988-9.985a9.922 9.922 0 0 0-2.922-7.066A9.923 9.923 0 0 0 12.012 2zm-.002 2a7.95 7.95 0 0 1 5.652 2.342 7.93 7.93 0 0 1 2.336 5.65c-.002 4.404-3.584 7.987-7.99 7.987a7.999 7.999 0 0 1-3.817-.971l-.673-.367-.745.175-1.968.465.48-1.785.217-.8-.414-.72a7.98 7.98 0 0 1-1.067-3.992C4.023 7.582 7.607 4 12.01 4zM8.477 7.375a.917.917 0 0 0-.666.313c-.23.248-.875.852-.875 2.08 0 1.228.894 2.415 1.02 2.582.123.166 1.726 2.765 4.263 3.765 2.108.831 2.536.667 2.994.625.458-.04 1.477-.602 1.685-1.185.208-.583.209-1.085.147-1.188-.062-.104-.229-.166-.479-.29-.249-.126-1.476-.728-1.705-.811-.229-.083-.396-.125-.562.125-.166.25-.643.81-.79.976-.145.167-.29.19-.54.065-.25-.126-1.054-.39-2.008-1.24-.742-.662-1.243-1.477-1.389-1.727-.145-.25-.013-.386.112-.51.112-.112.248-.291.373-.437.124-.146.167-.25.25-.416.083-.166.04-.313-.022-.438s-.547-1.357-.77-1.851c-.186-.415-.384-.425-.562-.432-.145-.006-.31-.006-.476-.006z">
+                </path>
+            </g>
+        </svg>
+    </a>
+    <script>
+
+        function toggleMenu() {
+            const mobileMenu = document.getElementById("mobile-menu");
+            const navLinks = document.getElementById("nav-links");
+            const hamburgerIcon = document.getElementById("hamburger-icon");
+
+            if (mobileMenu.style.maxHeight === "0px" || mobileMenu.style.maxHeight === "") {
+                mobileMenu.style.maxHeight = "500px";
+            } else {
+                mobileMenu.style.maxHeight = "0px";
+            }
+        }
+        document.addEventListener("click", function (event) {
+            const mobileMenu = document.getElementById("mobile-menu");
+            const hamburgerIcon = document.getElementById("hamburger-icon");
+
+            if (!mobileMenu.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+                mobileMenu.style.maxHeight = "0px";
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
