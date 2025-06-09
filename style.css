@@ -33,3 +33,35 @@
 .bg31{
     background-color: rgb(232,205,177);
 }
+@media (width >=64rem
+    /* 1024px */
+){
+
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+.slideTow {
+    width: 50% !important;
+}
+
+.slideOne {
+    width: 25% !important;   }
+}
+#custom-alert {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#custom-alert.show {
+    opacity: 1;
+    visibility: visible;
+}
+.containerdiv:hover img{
+scale: 1.1;
+}
+.containerdiv:hover div{
+    opacity: 1;
+}

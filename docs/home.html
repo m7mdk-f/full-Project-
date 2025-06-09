@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/tailwindcss.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -83,7 +83,14 @@
     </header>
     <div class="h-12 bg-black w-full"></div>
 
-
+    <div id="loading" class="fixed top-0 left-0 bg-white z-50 w-screen h-screen flex justify-center items-center">
+        <div class="relative animate-spin">
+            <hr class="border-8 absolute top-[32px] border-white  w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 25 25" fill="none">
+                <circle cx="12.5" cy="12.5" r="8" stroke="rgb(240,128,34)" stroke-width="1.2" />
+            </svg>
+        </div>
+    </div>
 
     <main class="md:mb-20 mb-10">
         <!-- section 1 -->
@@ -437,23 +444,38 @@
             </div>
             <!-- Swiper Container -->
             <!-- section 7 -->
-            <!-- <div class="relative">
+            <div class="relative">
 
-                <div class="swiper-container my-4 h-[50vh] max-w-7xl mx-auto overflow-hidden relative">
+                <div class="swiper-container my-4 h-[65vh] max-w-7xl mx-auto overflow-hidden relative"
+                    id="swiperContainer">
                     <div class="swiper-wrapper   mx-auto ">
 
                     </div>
                 </div>
                 <div id="left-btn"
-                    class="swiper-pagination-left absolute top-1/2 left-4 transform -translate-y-1/2 bg-black h-10 w-10 z-10 flex items-center justify-center text-white">
-                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+                    class="swiper-pagination-left  hidden absolute top-1/2 lg:left-7 xl:left-14 left-4 transform -translate-y-1/2  h-10 w-10 z-10  items-center justify-center text-white">
+                    <div class="swiper-pagination cursor-pointer swiper-pagination-clickable swiper-pagination-bullets">
+                        <svg class="slideshow-arrow" width="23" height="39" viewBox="0 0 23 39"
+                            style="transform: scaleX(-1) scale(0.782609);">
+                            <path d="M857.005,231.479L858.5,230l18.124,18-18.127,18-1.49-1.48L873.638,248Z"
+                                transform="translate(-855 -230)">
+                            </path>
+                        </svg>
+                    </div>
                 </div>
 
                 <div id="right-btn"
-                    class="swiper-pagination-right absolute top-1/2 right-4 transform -translate-y-1/2 bg-black h-10 w-10 z-10 flex items-center justify-center text-white">
-                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+                    class="swiper-pagination-right  absolute top-1/2 lg:right-7 xl:right-14 right-4 transform -translate-y-1/2  h-10 w-10 z-10 flex items-center justify-center text-white">
+                    <div class="swiper-pagination cursor-pointer swiper-pagination-clickable swiper-pagination-bullets">
+                        <svg class="slideshow-arrow" width="23" height="39" viewBox="0 0 23 39"
+                            style="transform: scaleX(1) scale(0.782609);">
+                            <path d="M857.005,231.479L858.5,230l18.124,18-18.127,18-1.49-1.48L873.638,248Z"
+                                transform="translate(-855 -230)">
+                            </path>
+                        </svg>
+                    </div>
                 </div>
-            </div> -->
+            </div>
             <!-- section 8 -->
             <div class="container mx-auto lg:pt-20 md:pt-16 pt-10">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -700,6 +722,31 @@
                 </div>
             </div>
         </div>
+
+        <div id="custom-alert"
+            class=" bg-white  overflow-hidden fixed inset-0   flex items-center justify-center z-50 duration-300">
+            <div class=" p-6  w-full ">
+                <div class="swiper-container modal-swiper" id="swipercust">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div>
+                        <div id="modal-prev" class="swiper-button-prev ">
+                        </div>
+                    </div>
+                    <div id="modal-next" class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button onclick="closeModal()"
+                    class="mt-4 px-4 py-2  fixed top-7 right-7 text-white rounded cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white"
+                        height="30px" width="30px" version="1.1" id="Capa_1" viewBox="0 0 460.775 460.775"
+                        xml:space="preserve">
+                        <path
+                            d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55  c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55  c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505  c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55  l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719  c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
     </main>
 
     <footer class="bg-beige py-8  relative">
@@ -855,7 +902,7 @@
         </div>
     </footer>
     <a href="#"
-        class="fixed bottom-5 right-5 rounded-full w-12 h-12 bg-primary flex justify-center items-center fill-white">
+        class="fixed bottom-5 right-5 rounded-full  w-12 h-12 bg-primary flex justify-center items-center fill-white">
         <svg data-bbox="20 59.5 160 81.001" viewBox="0 0 200 200" height="30" width="30"
             xmlns="http://www.w3.org/2000/svg" data-type="shape">
             <g>
@@ -876,7 +923,6 @@
         </svg>
     </a>
     <script>
-
         function toggleMenu() {
             const mobileMenu = document.getElementById("mobile-menu");
             const navLinks = document.getElementById("nav-links");
@@ -897,56 +943,6 @@
             }
         });
 
-    </script>
-
-    <!-- 
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1, // Default to 1 slide per view
-            spaceBetween: 10, // Space between slides
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-pagination-right',
-                prevEl: '.swiper-pagination-left',
-            },
-            breakpoints: {
-                // When screen width is larger than 640px, set slidesPerView to 2
-                640: {
-                    slidesPerView: 2, // Show 2 slides per view on screens larger than 640px
-                    spaceBetween: 10,
-                },
-                1024: {
-                    slidesPerView: 2, // Show 2 slides per view on larger screens
-                    spaceBetween: 10,
-                }
-            },
-            on: {
-                slideChange: function () {
-                    if (swiper.isBeginning) {
-                        document.getElementById('left-btn').style.display = 'none';
-                    } else {
-                        document.getElementById('left-btn').style.display = 'flex';
-                    }
-
-                    if (swiper.isEnd) {
-                        document.getElementById('right-btn').style.display = 'none';
-                    } else {
-                        document.getElementById('right-btn').style.display = 'flex';
-                    }
-                }
-            }
-        });
-
-        if (swiper.isBeginning) {
-            document.getElementById('left-btn').style.display = 'none';
-        }
-        if (swiper.isEnd) {
-            document.getElementById('right-btn').style.display = 'flex';
-        }
-
         const images = [
             "section 7 -1.avif",
             "section 7 -2.avif",
@@ -963,38 +959,132 @@
             "section 7 -13.avif"
         ];
 
-        const renderImages = () => {
-            const swiperWrapper = document.querySelector('.swiper-wrapper');
+
+        const swiperWrapper = document.querySelector('#swiperContainer .swiper-wrapper');
+
+        images.forEach((image, index) => {
+            const imgElement = document.createElement('div');
+            imgElement.classList.add('swiper-slide');
+            const container = document.createElement('div');
+            container.classList.add('containerdiv', 'relative', 'px-1', 'overflow-hidden', 'w-full', 'h-full', 'cursor-pointer')
+            let widthClass = 'w-full';
+            if (index % 2 === 0) {
+                widthClass = 'slideOne';
+            } else {
+                widthClass = 'slideTow';
+            }
+            imgElement.classList.add(`${widthClass}`)
+            container.onclick = () => showModalSlider(index);
+
+            container.innerHTML = `<img src="./images/${image}" class="h-full w-full  object-cover duration-500 scale-100     " /><div class="opacity-0 w-full h-full absolute top-0 left-0 bg-black/50 duration-500 "></div>`;
+            imgElement.appendChild(container);
+            swiperWrapper.appendChild(imgElement);
+        });
+
+        const swiper = new Swiper('#swiperContainer', {
+            navigation: {
+                nextEl: '#right-btn',
+                prevEl: '#left-btn',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'bullets',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+                1024: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 0
+                }
+
+            },
+            on: {
+
+                slideChange: function () {
+                    updateNavButtons(this);
+                }
+            }
+
+        });
+        const leftBtn = document.getElementById('left-btn');
+
+        function updateNavButtons(swiperInstance) {
+            const leftBtn = document.getElementById('left-btn');
+            const rightBtn = document.getElementById('right-btn');
+            leftBtn.style.display = swiperInstance.isBeginning ? 'none' : 'flex';
+            console.log(swiperInstance.isEnd)
+
+            rightBtn.style.display = swiperInstance.isEnd ? 'none' : 'flex';
+        }
+
+        updateNavButtons(swiper);
+        leftBtn.style.display = 'none';
+
+        let clickCount = 0;
+
+        function showModalSlider(clickedIndex) {
+            const modal = document.getElementById('custom-alert');
+            const modalSwiperWrapper = document.querySelector('#swipercust .swiper-wrapper');
+
+            modalSwiperWrapper.innerHTML = '';
+
             images.forEach((image, index) => {
                 const slide = document.createElement('div');
                 slide.classList.add('swiper-slide');
-
-                // Adjust the number of slides per view
-                if (index % 3 === 0 || index % 3 === 2) {
-                    // For the first and third positions, 1 slide per view
-                    slide.classList.add('slide-1');
-                } else {
-                    // For the second position, 2 slides per view
-                    slide.classList.add('slide-2');
-                }
-
-                const imageContainer = document.createElement('div');
-                imageContainer.classList.add('flex', 'justify-center', 'h-full');
-
-                const imgElement = document.createElement('img');
-                imgElement.src = `./images/${image}`;
-                imgElement.style.width = "100%";
-                imgElement.style.height = "100%";
-                imgElement.classList.add('object-contain');
-
-                imageContainer.appendChild(imgElement);
-                slide.appendChild(imageContainer);
-                swiperWrapper.appendChild(slide);
+                slide.innerHTML = `
+                <div  class="w-full h-96 md:h-[32rem] flex items-center justify-center">
+                    <img src="./images/${image}" class="max-w-full w-full max-h-full object-contain" />
+                </div>
+            `;
+                modalSwiperWrapper.appendChild(slide);
             });
-        };
-        renderImages();
-    </script> -->
 
+
+            const swipercust = new Swiper('#swipercust', {
+                slidesPerView: 1,
+                initialSlide: clickedIndex,
+                navigation: {
+                    nextEl: '#modal-next',
+                    prevEl: '#modal-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    type: 'bullets',
+                },
+
+            });
+            modal.classList.remove('hidden');
+
+            modal.classList.add('show');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('custom-alert');
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+        document.getElementById('custom-alert').addEventListener('click', function (e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+
+        window.onload = () => {
+            document.getElementById('loading').remove();
+        }
+
+    </script>
 </body>
 
 </html>
