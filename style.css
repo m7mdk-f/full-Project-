@@ -8,7 +8,20 @@
 .footerbg{
     background-color: rgb(232, 205, 177);
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
 
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; }
 .backgroundgradian{
     background: radial-gradient(circle at 3.6751302083333335% 6.940104166666666%, rgba(77, 96, 1, 0.22) 0%, 11.55%, rgba(77, 96, 1, 0) 35%),
         radial-gradient(circle at 92.96712239583333% 9.554036458333332%, rgba(250, 170, 99, 0.22) 0%, 17.5%, rgba(250, 170, 99, 0) 35%),
@@ -64,4 +77,11 @@ scale: 1.1;
 }
 .containerdiv:hover div{
     opacity: 1;
+}
+
+.condivimage:hover div{
+    opacity: 1;
+}
+.condivimage:hover img {
+    scale: 1.1;
 }

@@ -146,6 +146,15 @@
             </div>
         </div>
     </main>
+    <div id="loading" class="fixed top-0 left-0 bg-white z-50 w-screen h-screen flex justify-center items-center">
+        <div class="relative animate-spin">
+            <hr class="border-8 absolute top-[32px] border-white  w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 25 25" fill="none">
+                <circle cx="12.5" cy="12.5" r="8" stroke="rgb(240,128,34)" stroke-width="1.2" />
+            </svg>
+        </div>
+    </div>
+
     <footer class="bg-beige py-8  relative">
         <div class="w-full h-full absolute top-0 left-0 footerbg -z-10"
             style="background-image: url('./images/bg.png');">
@@ -340,6 +349,9 @@
                 mobileMenu.style.maxHeight = "0px";
             }
         });
+        window.onload = () => {
+            document.getElementById('loading').remove();
+        }
 
     </script>
 

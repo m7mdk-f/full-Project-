@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="./style/tailwindcss.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -91,7 +92,61 @@
                 Projects
             </h1>
         </div>
+
+
+        <div class="grid max-w-4xl mx-auto md:mt-20 mt-10 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 lg:grid-cols-4 gap-5"
+            id="projectGrid">
+            <!-- <div class="border-4  border-solid " style="border-color: rgb(169, 57, 22);">
+                <div class="h-40 w-full condivimage relative overflow-hidden">
+                    <img src="./images/builder.avif" class="w-full h-full duration-300 object-cover" alt="">
+                    <div
+                        class="absolute top-0 left-0 px-5 opacity-0 duration-300 bg-black/20 flex items-end w-full h-full">
+                        <div class="flex w-full justify-between">
+                            <h1>dcd</h1>
+                            <h1>dcd</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1>ssc</h1>
+                </div>
+            </div> -->
+        </div>
+
+        <div id="custom-alert"
+            class=" bg-white  overflow-hidden fixed inset-0   flex items-center justify-center z-50 duration-300">
+            <div class=" p-6  w-full ">
+                <div class="swiper-container modal-swiper" id="swipercust">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div>
+                        <button id="modal-prev" class="swiper-button-prev ">
+                        </button>
+                    </div>
+                    <button id="modal-next" class="swiper-button-next"></button>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <button onclick="closeModal()"
+                    class="mt-4 px-4 py-2  fixed top-7 right-7 text-white rounded cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white"
+                        height="30px" width="30px" version="1.1" id="Capa_1" viewBox="0 0 460.775 460.775"
+                        xml:space="preserve">
+                        <path
+                            d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55  c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55  c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505  c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55  l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719  c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
     </main>
+    <div id="loading" class="fixed top-0 left-0 bg-white z-50 w-screen h-screen flex justify-center items-center">
+        <div class="relative animate-spin">
+            <hr class="border-8 absolute top-[32px] border-white  w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 25 25" fill="none">
+                <circle cx="12.5" cy="12.5" r="8" stroke="rgb(240,128,34)" stroke-width="1.2" />
+            </svg>
+        </div>
+    </div>
     <footer class="bg-beige py-8  relative">
         <div class="w-full h-full absolute top-0 left-0 footerbg -z-10"
             style="background-image: url('./images/bg.png');">
@@ -266,6 +321,214 @@
         </svg>
     </a>
     <script>
+        const projects = [
+            {
+                image: '1',
+                title: 'فلل سكنية في حي الشاطئ الغربي بالدمام (تحت التنفيذ)',
+                year: 2023,
+                description: 'Project Description 1',
+            },
+            {
+                image: '2',
+                title: 'مشروع صناعي 4000 م2 صناعية اونيسكو الظهران (تحت التنفيذ)',
+                year: 2022,
+                description: 'Project Description 2',
+            },
+            {
+                image: '3',
+                title: 'مشروع تجاري 5000م2 دورين',
+                year: 2020,
+                description: 'Project Description 3',
+            },
+            {
+                image: '4',
+                title: 'فلل سكنية في حي الشاطئ الغربي بالدمام (تحت التنفيذ)',
+                year: 2023,
+                description: 'Project Description 1',
+            },
+            {
+                image: '5',
+                title: 'مشروع صناعي 4000 م2 صناعية اونيسكو الظهران (تحت التنفيذ)',
+                year: 2022,
+                description: 'Project Description 2',
+            },
+            {
+                image: '6',
+                title: 'مشروع تجاري 5000م2 دورين',
+                year: 2020,
+                description: 'Project Description 3',
+            },
+            {
+                image: '7',
+                title: 'فلل سكنية في حي الشاطئ الغربي بالدمام (تحت التنفيذ)',
+                year: 2023,
+                description: 'Project Description 1',
+            },
+            {
+                image: '8',
+                title: 'مشروع صناعي 4000 م2 صناعية اونيسكو الظهران (تحت التنفيذ)',
+                year: 2022,
+                description: 'Project Description 2',
+            },
+            {
+                image: '9',
+                title: 'مشروع تجاري 5000م2 دورين',
+                year: 2020,
+                description: 'Project Description 3',
+            },
+            {
+                image: '10',
+                title: 'فلل سكنية في حي الشاطئ الغربي بالدمام (تحت التنفيذ)',
+                year: 2023,
+                description: 'Project Description 1',
+            },
+            {
+                image: '11',
+                title: 'مشروع صناعي 4000 م2 صناعية اونيسكو الظهران (تحت التنفيذ)',
+                year: 2022,
+                description: 'Project Description 2',
+            },
+            {
+                image: '12',
+                title: 'مشروع تجاري 5000م2 دورين',
+                year: 2020,
+                description: 'Project Description 3',
+            },
+
+            {
+                image: '13',
+                title: 'فلل سكنية في حي الشاطئ الغربي بالدمام (تحت التنفيذ)',
+                year: 2023,
+                description: 'Project Description 1',
+            },
+            {
+                image: '14',
+                title: 'مشروع صناعي 4000 م2 صناعية اونيسكو الظهران (تحت التنفيذ)',
+                year: 2022,
+                description: 'Project Description 2',
+            },
+            {
+                image: '15',
+                title: 'مشروع تجاري 5000م2 دورين',
+                year: 2020,
+                description: 'Project Description 3',
+            },
+
+            {
+                image: '16',
+                title: 'مشروع تجاري 5000م2 دورين',
+                year: 2020,
+                description: 'Project Description 3',
+            },
+        ];
+        const projectGrid = document.getElementById('projectGrid');
+
+        // Load liked projects from local storage
+        const likedProjects = JSON.parse(localStorage.getItem('likedProjects')) || [];
+
+        projects.forEach((project, index) => {
+            const projectCard = document.createElement('div');
+            projectCard.classList.add('border-[3px]', 'border-solid', 'overflow-hidden');
+            projectCard.style.borderColor = "rgb(169, 57, 22)";
+            projectCard.innerHTML = `
+        <div class="h-40 w-full condivimage relative overflow-hidden">
+            <img  src="./images/projects/${project.image}.avif" class="w-full h-full duration-300 object-cover" alt="">
+            <div onclick="showModalSlider(${index})" class="absolute top-0 left-0 px-5 opacity-0 duration-300 bg-black/20 flex items-end w-full h-full">
+                <div class="flex w-full justify-between mb-3">
+                    <button class="cursor-pointer" id="like-${index}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class=" stroke-white fill-transparent like-icon" data-index="${index}">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.55284 3.00012C7.93598 3.00012 7.23841 3.06514 6.57209 3.29224C2.55494 4.60387 1.26341 8.894 2.39877 12.43L2.40354 12.4448L2.40877 12.4595C3.03435 14.2174 4.04226 15.8127 5.35336 17.1249L5.36091 17.1324L5.36862 17.1398C7.23782 18.9323 9.27254 20.4953 11.4756 21.8515L11.9934 22.1703L12.5147 21.8573C14.7226 20.5315 16.7964 18.9254 18.6432 17.1474L18.649 17.1419L18.6547 17.1362C19.9771 15.8215 20.9851 14.2144 21.6015 12.4549L21.6066 12.4402L21.6113 12.4253C22.7251 8.89703 21.4401 4.60176 17.4507 3.30948C16.7976 3.09221 16.1236 3.00012 15.4648 3.00012C13.9828 3.00011 12.8858 3.62064 12.0004 4.25309C11.1219 3.62545 10.0176 3.00012 8.55284 3.00012Z" />
+                        </svg>
+                    </button>
+                    <h1>dcd</h1>
+                </div>
+            </div>
+        </div>
+        <div class="p-4">
+            <h1 class="text-center text-primary">${project.title}</h1>
+            <div class="flex justify-center items-center">
+                <button class="border border-solid text-base border-primary px-4 text-primary  hover:text-white hover:bg-primary duration-300 cursor-pointer mt-3 py-1 rounded-md">Click here</button>
+            </div>
+        </div>
+    `;
+
+            // Check if the project is liked and update the icon
+            if (likedProjects.includes(index)) {
+                projectCard.querySelector(`.like-icon`).classList.add('fill-red-500');
+                projectCard.querySelector(`.like-icon`).classList.remove('stroke-white');
+                projectCard.querySelector(`.like-icon`).classList.remove('fill-transparent');
+            }
+
+            const likeButton = projectCard.querySelector(`#like-${index}`);
+            likeButton.addEventListener('click', () => {
+                const likeIcon = likeButton.querySelector('.like-icon');
+                const isLiked = likedProjects.includes(index);
+
+                if (isLiked) {
+                    likedProjects.splice(likedProjects.indexOf(index), 1);
+                    likeIcon.classList.add('stroke-white');
+                    likeIcon.classList.add('fill-transparent');
+                    likeIcon.classList.remove('fill-red-500');
+                } else {
+                    // Add like
+                    likedProjects.push(index);
+                    likeIcon.classList.remove('stroke-white');
+                    likeIcon.classList.remove('fill-transparent');
+                    likeIcon.classList.add('fill-red-500');
+                }
+
+                localStorage.setItem('likedProjects', JSON.stringify(likedProjects));
+            });
+            const projectImage = projectCard.querySelector('.projectImage');
+
+            projectGrid.appendChild(projectCard);
+        });
+
+        function showModalSlider(clickedIndex) {
+            console.log(1)
+            const modal = document.getElementById('custom-alert');
+            const modalSwiperWrapper = document.querySelector('#swipercust .swiper-wrapper');
+
+            modalSwiperWrapper.innerHTML = '';
+
+            projects.forEach((image, index) => {
+                const slide = document.createElement('div');
+                slide.classList.add('swiper-slide');
+                slide.innerHTML = `
+                <div  class="w-full h-96 md:h-[32rem] flex items-center justify-center">
+                    <img src="./images/projects/${image.image}.avif" class=" w-full max-h-full object-contain" />
+                </div>
+            `;
+                modalSwiperWrapper.appendChild(slide);
+            });
+
+
+            const swipercust = new Swiper('#swipercust', {
+                slidesPerView: 1,
+                initialSlide: clickedIndex,
+                navigation: {
+                    nextEl: '#modal-next',
+                    prevEl: '#modal-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    type: 'bullets',
+                },
+
+            });
+            modal.classList.remove('hidden');
+
+            modal.classList.add('show');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('custom-alert');
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
 
         function toggleMenu() {
             const mobileMenu = document.getElementById("mobile-menu");
@@ -286,6 +549,9 @@
                 mobileMenu.style.maxHeight = "0px";
             }
         });
+        window.onload = () => {
+            document.getElementById('loading').remove();
+        }
 
     </script>
 
