@@ -718,19 +718,20 @@
         <div id="custom-alert"
             class=" bg-white  overflow-hidden fixed inset-0   flex items-center justify-center z-50 duration-300">
             <div class=" p-6  w-full ">
-                <div class="swiper-container modal-swiper" id="swipercust">
+                <div class="swiper swiper-gl swiper-initialized swiper-horizontal swiper-watch-progress"
+                    id="swipercust">
                     <div class="swiper-wrapper">
                     </div>
                     <div>
-                        <button id="modal-prev" class="swiper-button-prev ">
+                        <button id="modal-prev" class="swiper-button-prev lg:scale-100 scale-50 ">
                         </button>
                     </div>
-                    <button id="modal-next" class="swiper-button-next"></button>
-                    <div class="swiper-pagination"></div>
+                    <button id="modal-next" class="swiper-button-next lg:scale-100 scale-50"></button>
                 </div>
+                <div class="swiper-pagination"></div>
 
                 <button onclick="closeModal()"
-                    class="mt-4 px-4 py-2  fixed top-7 right-7 text-white rounded cursor-pointer">
+                    class="mt-4 px-4 py-2  fixed md:top-7 top-3 right-3 md:scale-100 scale-50 md:right-7 text-white rounded cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white"
                         height="30px" width="30px" version="1.1" id="Capa_1" viewBox="0 0 460.775 460.775"
                         xml:space="preserve">
